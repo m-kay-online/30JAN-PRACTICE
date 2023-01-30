@@ -1,0 +1,84 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+void printVec(vector<int> v){
+    // O(1)
+    cout<<v.size()<<endl;
+ 
+    // O(n)
+    for(int i=0; i<v.size(); i++){
+        cout<<v[i]<<" ";
+    }
+    cout<<endl;
+}
+ 
+int main() {
+    // vector <int> v(5, 10);
+ 
+    // printVec(v);
+ 
+    // // O(1)
+    // v.push_back(5);
+ 
+    // printVec(v);
+ 
+    // // O(1)
+    // v.pop_back();
+ 
+    // O(n)
+    // vector <int> copy = v;
+    // v[0] = 3;
+ 
+ 
+    // printVec(v);
+    // printVec(copy);
+ 
+    // pair<int, int> p1 = {1, 2};
+    // pair<int, int> p2 = {3, 4};
+    // pair<int, int> p3 = {5, 6};
+    // pair<int, int> p4 = {7, 8};
+    // pair<int, int> p5 = {9, 10};
+    // cout<<p.first<<" "<<p.second; 
+ 
+    // vector<pair<int, int>> v_p;
+    // int N;
+    // cin>>N;
+    // for(int i=0; i<N; i++){
+    //     int v1, v2;
+    //     cin>>v1>>v2;
+ 
+    //     pair<int, int> p = {v1, v2};
+ 
+    //     v_p.push_back(p);
+    // }
+ 
+    // for(int i=0; i<N; i++){
+    //     // v_p[0] -> first pair {1,2}
+    //     // v_p[1] -> second pair {3,4}
+    //     // ...
+    //     // ...
+    //     pair <int, int> p = v_p[i];
+ 
+    //     cout<<p.first<<" "<<p.second<<endl;
+    // }
+ 
+    vector<vector<int>> v_v = 
+    {
+        {0}, 
+        {1,2}, 
+        {1,2,3}, 
+        {1,4,7,0}
+    };
+ 
+ 
+    vector<vector<int>> :: iterator it;
+ 
+    for( it=v_v.begin(); it!= v_v.end(); it++){
+        vector<int> v =  *(it);
+ 
+        printVec(v);
+    }
+ 
+ 
+}
+ 
